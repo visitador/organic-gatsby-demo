@@ -1,4 +1,5 @@
 import { Meta, Unstyled } from "@storybook/blocks";
+import {Title} from './Title';
 
 <Meta title="Style/Color" />
 
@@ -14,17 +15,42 @@ export const ColorCard = ({ title, color, cn }) => (
 
 
 <Unstyled>
-<h1 className="text-[40px] leading-[120%] mb-4 font-semibold">Color</h1>
-<div className="bg-primary rounder-[3px] w-20 h-[3px]"/>
+<Title label="Color"/>
 
 <div className="flex space-x-6 mt-12">
-<ColorCard title="Soft Primary" color="#84D187" cn="bg-primary-soft text-greyscale-900"/>
-<ColorCard title="Primary" color="#00B207" cn="bg-primary text-white"/>
-<ColorCard title="Hard Primary" color="#2C742F" cn="bg-primary-hard text-white"/>
-<ColorCard title="Warning" color="#FF8A00" cn="bg-color-warning text-white"/>
-<ColorCard title="Danger" color="#EA4B48" cn="bg-color-danger text-white"/>
-<ColorCard title="White" color="#FFFFF" cn="bg-white text-greyscale-900 outline -outline-offset-1 outline-1 outline-greyscale-100"/>
-
+    <ColorCard title="Soft Primary" color="#84D187" cn="bg-primary-soft text-greyscale-900"/>
+    <ColorCard title="Primary" color="#00B207" cn="bg-primary text-white"/>
+    <ColorCard title="Hard Primary" color="#2C742F" cn="bg-primary-hard text-white"/>
+    <ColorCard title="Warning" color="#FF8A00" cn="bg-color-warning text-white"/>
+    <ColorCard title="Danger" color="#EA4B48" cn="bg-color-danger text-white"/>
+    <ColorCard title="White" color="#FFFFF" cn="bg-white text-greyscale-900 outline -outline-offset-1 outline-1 outline-greyscale-100"/>
 </div>
 
+<h2 className="mb-12 mt-32 text-greyscale-900 text-2xl font-medium">Gray</h2>
+<div className="flex">
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-900 text-white">Gray 9</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-800 text-white">Gray 8</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-700 text-white">Gray 7</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-600 text-white">Gray 6</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-500 text-white">Gray 5</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-400 text-white">Gray 4</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-300 text-greyscale-900">Gray 3</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-200 text-greyscale-900">Gray 2</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-100 text-greyscale-900">Gray 1</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greyscale-50 text-greyscale-900">Gray .5</div>
+</div>
+
+<h2 className="mb-12 mt-32 text-greyscale-900 text-2xl font-medium">Green Gray</h2>
+<div className="flex">
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-900 text-white">Gray 9</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-800 text-white">Gray 8</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-700 text-white">Gray 7</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-600 text-white">Gray 6</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-500 text-white">Gray 5</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-400 text-white">Gray 4</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-300 text-greyscale-900">Gray 3</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-200 text-greyscale-900">Gray 2</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-100 text-greyscale-900">Gray 1</div>
+    <div className="w-32 h-32 flex shrink-0 justify-center items-center bg-greengray-50 text-greyscale-900">Gray .5</div>
+</div>
 </Unstyled>

@@ -12,6 +12,20 @@ module.exports = {
       fontFamily: {
         'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        display01: ['72px', '120%'],
+        heading01: ['56px', '120%'],
+        heading02: ['48px', '120%'],
+        heading03: ['40px', '120%'],
+        heading04: ['36px', '120%'],
+        heading05: ['32px', '120%'],
+        bodyxxl: ['24px', '150%'],
+        bodyxl: ['20px', '150%'],
+        bodylarge: ['18px', '150%'],
+        bodymedium: ['16px', '150%'],
+        bodysmall: ['14px', '150%'],
+        bodytiny: ['12px', '130%'],
+      },
       colors: {
         color: {
           warning: '#FF8A00',

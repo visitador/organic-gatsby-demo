@@ -1,0 +1,89 @@
+import { Meta, Unstyled } from "@storybook/blocks";
+import { Title } from './Title';
+
+export const FONT_WEIGHTS = 'font-light font-normal font-medium font-semibold font-bold';
+
+export const FontCard = ({name, weight})=>(
+    <div className={`p-8 shrink-0 w-52 text-greyscale-900 outline -outline-offset-1 outline-1 outline-greyscale-100 rounded-[10px]`}>
+    <div className={`text-[48px] leading-[56px]  font-${weight}`}>Aa</div>
+    <div className="mt-3">{name}</div>
+    </div>)
+
+<Meta title="Style/Typography" />
+
+
+<Unstyled>
+
+<Title label="Typography"/>
+
+<div className="mt-12 text-7xl leading-[120%] text-greyscale-900">Poppins - Google Font</div>
+
+<div className="flex space-x-6 mt-14">
+    <FontCard name="Poppins - 300" weight="light"/>
+    <FontCard name="Poppins - 400" weight="normal"/>
+    <FontCard name="Poppins - 500" weight="medium"/>
+    <FontCard name="Poppins - 600" weight="semibold"/>
+    <FontCard name="Poppins - 700" weight="bold"/>
+</div>
+
+<div className="mt-20 grid grid-cols-2 gap-x-6 gap-y-0 whitespace-nowrap min-w-fit">
+    <div className="text-display01">Dipslay 01, 400</div>
+    <div className="text-display01 font-semibold">Dipslay 01, 600</div>
+    <div className="text-heading01">Heading 01, 400</div>
+    <div className="text-heading01 font-semibold">Heading 01, 600</div>
+    <div className="text-heading02">Heading 02, 400</div>
+    <div className="text-heading02 font-semibold">Heading 02, 600</div>
+    <div className="text-heading03">Heading 03, 400</div>
+    <div className="text-heading03 font-semibold">Heading 03, 600</div>
+    <div className="text-heading04">Heading 04, 400</div>
+    <div className="text-heading04 font-semibold">Heading 04, 600</div>
+    <div className="text-heading05">Heading 05, 400</div>
+    <div className="text-heading05 font-semibold">Heading 05, 600</div>
+</div>
+
+
+<div className="mt-36 flex whitespace-nowrap space-x-6 w-full">
+    <div className="space-y-3 grow">
+        <div className="text-bodyxxl font-normal">Body XXL, 400</div>
+        <div className="text-bodyxxl font-medium">Body XXL, 500</div>
+        <div className="text-bodyxxl font-semibold">Body XXL, 600</div>
+    </div>
+    <div className="space-y-3 grow">
+        <div className="text-bodyxl font-normal">Body XL, 400</div>
+        <div className="text-bodyxl font-medium">Body XL, 500</div>
+        <div className="text-bodyxl font-semibold">Body XL, 600</div>
+    </div>
+    <div className="space-y-3 grow">
+        <div className="text-bodylarge font-normal">Body Large, 400</div>
+        <div className="text-bodylarge font-medium">Body Large, 500</div>
+        <div className="text-bodylarge font-semibold">Body Large, 600</div>
+    </div>
+    <div className="space-y-3 grow">
+        <div className="text-bodymedium font-normal">Body Medium, 400</div>
+        <div className="text-bodymedium font-medium">Body Medium, 500</div>
+        <div className="text-bodymedium font-semibold">Body Medium, 600</div>
+    </div>
+    <div className="space-y-3 grow">
+        <div className="text-bodysmall font-normal">Body Small, 400</div>
+        <div className="text-bodysmall font-medium">Body Small, 500</div>
+        <div className="text-bodysmall font-semibold">Body Small, 600</div>
+    </div>
+    <div className="space-y-3 grow">
+        <div className="text-bodytiny font-normal">Body Tiny, 400</div>
+        <div className="text-bodytiny font-medium">Body Tiny, 500</div>
+        <div className="text-bodytiny font-semibold">Body Tiny, 600</div>
+    </div>
+</div>
+
+</Unstyled>
+
+
+<style>
+{`
+.sbdocs .sbdocs-content{
+
+    max-width: none;
+    width: auto;
+}
+`}
+</style>
