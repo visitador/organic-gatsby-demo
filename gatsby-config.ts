@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "/organic-gatsby-demo",
   siteMetadata: {
     title: `Organic Gatsby Demo`,
     siteUrl: `https://www.yourdomain.tld`
