@@ -1,36 +1,30 @@
-import { Meta } from "@storybook/blocks";
+import { Meta, Unstyled } from "@storybook/blocks";
 
-<Meta title="Style/Color"/>
+<Meta title="Style/Color" />
 
-# Color
+export const ColorCard = ({ title, color, cn }) => (
+  <div
+    className={`w-[200px] h-[200px] shrink-0 rounded-xl p-6 flex flex-col justify-end ${cn}`}
+  >
+    <div className="mb-1 text-xl leading-8">{title}</div>
+    <div className="text-sm">{color}</div>
+  </div>
+);
 
-<div className="w-[200px] h-[200px] bg-green-500">
-Soft Primary
-#84D187
+
+
+<Unstyled>
+<h1 className="text-[40px] leading-[120%] mb-4 font-semibold">Color</h1>
+<div className="bg-primary rounder-[3px] w-20 h-[3px]"/>
+
+<div className="flex space-x-6 mt-12">
+<ColorCard title="Soft Primary" color="#84D187" cn="bg-primary-soft text-greyscale-900"/>
+<ColorCard title="Primary" color="#00B207" cn="bg-primary text-white"/>
+<ColorCard title="Hard Primary" color="#2C742F" cn="bg-primary-hard text-white"/>
+<ColorCard title="Warning" color="#FF8A00" cn="bg-color-warning text-white"/>
+<ColorCard title="Danger" color="#EA4B48" cn="bg-color-danger text-white"/>
+<ColorCard title="White" color="#FFFFF" cn="bg-white text-greyscale-900 outline -outline-offset-1 outline-1 outline-greyscale-100"/>
+
 </div>
 
-<div>
-Primary
-#00B207
-</div>
-
-<div>
-Hard Primary
-#2C742F
-</div>
-
-<div>
-Warning
-#FF8A00
-</div>
-
-
-<div>
-Danger
-#EA4B48
-</div>
-
-<div>
-White
-#FFFFFF
-</div>
+</Unstyled>
