@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        container: '1320px'
+      },
       fontFamily: {
         'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
       },
