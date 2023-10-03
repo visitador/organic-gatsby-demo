@@ -29,6 +29,9 @@ module.exports = {
         bodysmall: ['14px', '150%'],
         bodytiny: ['12px', '130%'],
       },
+      boxShadow: {
+        card: '0px 0px 12px 0px rgba(32, 181, 38, 0.32)',
+      },
       colors: {
         color: {
           warning: '#FF8A00',
