@@ -1,13 +1,10 @@
 import React from "react";
-import { Plant } from "../icons/Plant";
+import { Logo } from "../Logo";
 
 export const HeaderCart: React.FC = () => (
   <div className="border-t border-greyscale-100 w-full min-w-fit px-16">
     <div className="w-container mx-auto flex items-center h-[92px] ">
-      <Plant className="w-8 h-8 mr-2 text-primary" />
-      <span className="text-greyscale-900 text-[32px] leading-[38px] font-medium">
-        Ecobazar
-      </span>
+      <Logo className="text-greyscale-900"/>
       <div className="mx-auto flex">
         <div className="h-[45px] px-4 w-96 flex items-center rounded-l-md border-t border-l border-b border-greyscale-100">
           <svg
