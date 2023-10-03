@@ -1,12 +1,13 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Header } from "../components/navigation/Header";
+import { Footer } from "../components/navigation/Footer";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <nav>
-      <div></div>
       <Header/>
+      <Footer/>
     </nav>
   );
 };
