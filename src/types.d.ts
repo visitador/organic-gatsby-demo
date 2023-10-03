@@ -6,3 +6,7 @@ declare module "*.svg" {
 type PropsWithClass<T = unknown> = T & {
   className?: string;
 };
+
+type PropsWithOnClick<T = unknown> = T & {
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+};
