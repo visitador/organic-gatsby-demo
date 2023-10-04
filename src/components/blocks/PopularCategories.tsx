@@ -1,6 +1,6 @@
 import React from "react";
 import { Block } from "../Layout";
-import { Category } from "../CardCategory";
+import { CardCategory } from "../CardCategory";
 
 interface PopularCategoriesProps {
   categories: { title: string; img: string }[];
@@ -42,7 +42,7 @@ export const PopularCategories: React.FC<
     </div>
     <div className="mt-8 flex justify-between flex-wrap">
       {categories.map((category) => (
-        <Category
+        <CardCategory
           title={category.title}
           img={category.img}
           className="mb-6 shrink-0"

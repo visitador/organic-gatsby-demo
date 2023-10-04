@@ -6,7 +6,7 @@ type CategoryProps = {
   imgClassName?: string;
 };
 
-export const Category: React.FC<PropsWithClass<CategoryProps>> = ({
+export const CardCategory: React.FC<PropsWithClass<CategoryProps>> = ({
   title,
   img,
   className,

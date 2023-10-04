@@ -6,7 +6,7 @@ import { PopularCategories as PopularCategoriesBlock } from "../components/block
 
  const meta: Meta = {
     component: PopularCategoriesBlock,
-    title: "Components"
+    title: "Blocks"
 }
 export default meta;
 
