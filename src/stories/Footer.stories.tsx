@@ -6,7 +6,7 @@ import { Footer as FooterComponent } from "../components/navigation/Footer";
 
  const meta: Meta = {
     component: FooterComponent,
-    title: "Components"
+    title: "Navigation"
 }
 export default meta;
 
