@@ -36,6 +36,7 @@ module.exports = {
         color: {
           warning: '#FF8A00',
           danger: '#EA4B48',
+          sale: '#2388FF',
         },
         primary: {
           soft: '#84D187',
